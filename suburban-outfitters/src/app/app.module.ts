@@ -3,10 +3,26 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { AccountComponent } from './account/account.component';
+import { OrdersComponent } from './orders/orders.component';
+import { ProductsComponent } from './products/products.component';
+import { InventoryComponent } from './inventory/inventory.component';
+import { LoginComponent } from './login/login.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    AccountComponent,
+    OrdersComponent,
+    ProductsComponent,
+    InventoryComponent,
+    LoginComponent,
+    SignUpComponent,
+    ResetPasswordComponent
   ],
   imports: [
     BrowserModule,
