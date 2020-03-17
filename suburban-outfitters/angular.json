@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "suburban-outfitters": {
@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "suburban-outfitters"
+    }
+  },
+  "defaultProject": "suburban-outfitters",
+  "cli": {
+    "analytics": "92314de5-645f-48b3-830c-dda0a15ccfce"
+  }
 }
