@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class DataServiceService {
-  private REST_API_SERVER = "http://localhost:80";
+  private REST_API_SERVER = "http://localhost/Suburban_Outfitters-Goup6/suburban-outfitter-server/test.php";
 
   constructor(private httpClient: HttpClient) { }
 
