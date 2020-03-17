@@ -1,7 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2786750104784d82f1e59c27ea9cc59cc556b8ca
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
