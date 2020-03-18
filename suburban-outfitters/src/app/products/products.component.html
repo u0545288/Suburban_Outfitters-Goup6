@@ -1,69 +1,26 @@
-
-<mat-tab-group>
-  <mat-tab label="Products">
-
-    <div class="container" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="25px grid">
-      <div class="item" fxFlex="23%" *ngFor="let product of products; let i = index">
-        <mat-card  (click)="displayProductDetail(product)">
-          <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-          <mat-card-content>
-            <h2>
-              {{product.title}}
-            </h2>
-          </mat-card-content>
-        </mat-card>
-      </div>
-
+<div class="container"
+fxLayout
+fxLayout.xs="column"
+fxLayoutAlign="center"
+fxLayoutGap="10px"
+fxLayoutGap.xs="0">
+  <div class="container" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="25px grid">
+    <nav mat-tab-nav-bar fxFlex="100%" fxLayoutAlign="center">
+         <a mat-tab-link routerLink="/product-list" routerLinkActive="active">Products</a>
+         <a mat-tab-link routerLink="/account" routerLinkActive="active">Update Account</a>
+         <a mat-tab-link routerLink="/inventory" routerLinkActive="active">Inventory</a>
+         <a mat-tab-link routerLink="/orders" routerLinkActive="active">Your Orders </a>
+         <a mat-tab-link routerLink="/shopping-cart" routerLinkActive="active">Your Cart</a>
+    </nav>
+    <div class="item" fxFlex="23%" *ngFor="let product of products; let i = index">
+      <mat-card  (click)="displayProductDetail(product)">
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <h2>
+            {{product.title}}
+          </h2>
+        </mat-card-content>
+      </mat-card>
     </div>
-
-  </mat-tab>
-  <mat-tab label="Update Account">
-
-    <div class="container"
-        fxLayout
-        fxLayout.xs="column"
-        fxLayoutAlign="center"
-        fxLayoutGap="10px"
-        fxLayoutGap.xs="0">
-    <div class="item item-1" fxFlex="33%" >
-      Update Account
-    </div>
-    </div>
-
-
-  </mat-tab>
-
-  <mat-tab label="Your Orders">
-
-    <div class="container"
-        fxLayout
-        fxLayout.xs="column"
-        fxLayoutAlign="center"
-        fxLayoutGap="10px"
-        fxLayoutGap.xs="0">
-    <div class="item item-1" fxFlex="33%" >
-      Your orders
-    </div>
-    </div>
-
-
-  </mat-tab>
-
-  <mat-tab label="Your Cart">
-
-    <div class="container"
-        fxLayout
-        fxLayout.xs="column"
-        fxLayoutAlign="center"
-        fxLayoutGap="10px"
-        fxLayoutGap.xs="0">
-    <div class="item item-1" fxFlex="33%" >
-      Your Cart
-    </div>
-    </div>
-
-
-  </mat-tab>
-
-</mat-tab-group>
-
+  </div>
+</div>

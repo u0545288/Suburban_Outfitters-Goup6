@@ -48,6 +48,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +62,9 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     LoginComponent,
     SignUpComponent,
     ResetPasswordComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    CheckoutComponent,
+    ShoppingCartComponent
   ],
   imports: [
     BrowserModule,
