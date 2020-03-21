@@ -1,59 +1,82 @@
+<div class="container"
+fxLayout
+fxLayout.xs="column"
+fxLayoutAlign="center"
+fxLayoutGap="10px"
+fxLayoutGap.xs="0">
+      <div class="example-form" class="container" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="25px grid">
+        <nav mat-tab-nav-bar fxFlex="100%" fxLayoutAlign="center">
+          <a mat-tab-link routerLink="/product-list" routerLinkActive="active">Products</a>
+          <a mat-tab-link routerLink="/account" routerLinkActive="active">Update Account</a>
+          <a mat-tab-link routerLink="/inventory" routerLinkActive="active">Inventory</a>
+          <a mat-tab-link routerLink="/orders" routerLinkActive="active">Your Orders </a>
+          <a mat-tab-link routerLink="/shopping-cart" routerLinkActive="active">Your Cart</a>
+        </nav>
+      </div>
+</div>
+<br>
 
-<form class="checkout">
-  <div>
-    <h1>Customer Information</h1>
-    <mat-form-field class="example-full-width">
-      <mat-label>Name</mat-label>
-      <input matInput placeholder="Full Name" value="">
-    </mat-form-field>
+<div>
+  <form class="checkout"  fxLayoutGap="2px">
+    <div>
+      <h1>Customer Information</h1>
+      <mat-form-field class="example-full-width">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Full Name" value="">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+        <mat-label>Address</mat-label>
+        <input matInput placeholder="1234 Web Apps Ave." value="">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+        <mat-label>State</mat-label>
+        <input matInput placeholder="UT" value="">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+        <mat-label>Zip</mat-label>
+        <input matInput placeholder="84111" value="">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="first.last@gmail.com" value="">
+      </mat-form-field>
+      <br>
+    </div>
+    <br><br>
+    <h1>Credit Card</h1>
+    <div>
+      <mat-form-field class="example-full-width">
+        <mat-label>Card Type</mat-label>
+        <input matInput placeholder="Visa" value="">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+        <mat-label>Name on Card</mat-label>
+        <input matInput placeholder="ABC XYZ" value="">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+        <mat-label>Card Number</mat-label>
+        <input matInput placeholder="4312 3242 1214 2133" value="">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+        <mat-label>Expirationr</mat-label>
+        <input matInput placeholder="12 25" value="">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+        <mat-label>Security Code</mat-label>
+        <input matInput placeholder="1234" value="">
+      </mat-form-field>
+    </div>
     <br>
-    <mat-form-field class="example-full-width">
-      <mat-label>Address</mat-label>
-      <input matInput placeholder="1234 Web Apps Ave." value="">
-    </mat-form-field>
-    <br>
-    <mat-form-field class="example-full-width">
-      <mat-label>State</mat-label>
-      <input matInput placeholder="UT" value="">
-    </mat-form-field>
-    <br>
-    <mat-form-field class="example-full-width">
-      <mat-label>Zip</mat-label>
-      <input matInput placeholder="84111" value="">
-    </mat-form-field>
-    <br>
-    <mat-form-field class="example-full-width">
-      <mat-label>Email</mat-label>
-      <input matInput placeholder="first.last@gmail.com" value="">
-    </mat-form-field>
-    <br>
-  </div>
-  <br><br>
-  <h1>Credit Card</h1>
-  <div>
-    <mat-form-field class="example-full-width">
-      <mat-label>Card Type</mat-label>
-      <input matInput placeholder="Visa" value="">
-    </mat-form-field>
-    <br>
-    <mat-form-field class="example-full-width">
-      <mat-label>Name on Card</mat-label>
-      <input matInput placeholder="ABC XYZ" value="">
-    </mat-form-field>
-    <br>
-    <mat-form-field class="example-full-width">
-      <mat-label>Card Number</mat-label>
-      <input matInput placeholder="4312 3242 1214 2133" value="">
-    </mat-form-field>
-    <br>
-    <mat-form-field class="example-full-width">
-      <mat-label>Expirationr</mat-label>
-      <input matInput placeholder="12 25" value="">
-    </mat-form-field>
-    <br>
-    <mat-form-field class="example-full-width">
-      <mat-label>Security Code</mat-label>
-      <input matInput placeholder="1234" value="">
-    </mat-form-field>
-  </div>
-</form>
+    <div class="example-button-row">
+      <button mat-raised-button color="primary">Submit Payment</button>
+    </div>
+  </form>
+</div>
