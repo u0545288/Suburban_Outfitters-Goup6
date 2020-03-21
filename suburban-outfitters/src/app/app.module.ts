@@ -50,7 +50,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
-import { OrderSummaryComponent } from './order-summary/order-summary.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +65,6 @@ import { OrderSummaryComponent } from './order-summary/order-summary.component';
     ProductDetailComponent,
     CheckoutComponent,
     ShoppingCartComponent,
-    OrderSummaryComponent
   ],
   imports: [
     BrowserModule,
