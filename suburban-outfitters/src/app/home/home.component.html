@@ -1,21 +1,38 @@
-<h1>About Us</h1><br>
-<p>This is a paragraph about suburban outfitters. We are an awesome online retail store that everybody should shop at. Just imagine that this paragraph tells you everything you want and more from an online retail store.</p>
-<br>
-<form>
-    <div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" ><br>
-  
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" ><br>
-  
-      <button routerLink="/product-list" routerLinkActive="active">Login</button>
-    </div>
-  
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-    
-  </form>
+<html>
+<head>
+    <title>Surburban Outfitters - Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+</head>
+<body>
 
+<div id="about" class="container-fluid">
+    <div class="row">
+		<div class="col-sm-8">
+            <span></span><h1>About Us</h1>
+                <p>This is a paragraph about suburban outfitters. We are an awesome online retail store that everybody should shop at. Just imagine that this paragraph tells you everything you want and more from an online retail store.</p>
+          </div>  
+        <div class="col-sm-4 bg-grey" >
+            <form style="text-align:center">
+                <p style="text-align:center"></p>
+                  <label for="uname"><b>&nbsp;&nbsp;Username&nbsp;&nbsp;</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" ><br><br>
+                  <label for="psw"><b>&nbsp;&nbsp;Password&nbsp;&nbsp;</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" ><br>
+                  <a href="#">forgot password?</a><br><br>
+                  <button routerLink="/product-list" routerLinkActive="active">Login</button>
+                  <button type="button" class="cancelbtn">Cancel</button>
+                
+              </form>
+              
+
+        </div> 
+      </div> 
+  </div> 
+
+
+  
+
+</body>
+</html>
