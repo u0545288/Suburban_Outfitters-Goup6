@@ -72,8 +72,8 @@ fxLayoutGap.xs="0">
         </form>
         <br>
         <div class="example-button-row">
-          <button mat-raised-button color="primary">Add to Cart</button>
-          <button mat-raised-button color="primary" style="left: 30%;">Proceed to Checkout</button>
+          <button mat-raised-button color="primary" (click)="displayShoppingCart(product)">Add to Cart</button>
+          <button mat-raised-button color="primary" style="left: 30%;" (click)="displayCheckout(product)">Proceed to Checkout</button>
 
         </div>
       </div>

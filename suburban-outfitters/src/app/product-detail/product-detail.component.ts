@@ -28,5 +28,15 @@ export class ProductDetailComponent implements OnInit {
       this.product = this.state$.product;
     }
   }
+  public displayCheckout(product) {
+    console.log('displayCheckout');
+    console.log(product);
+    this.router.navigateByUrl('/checkout', { state: { product } });
+  }
+  public displayShoppingCart(product) {
+    console.log('displayShoppingCart');
+    console.log(product);
+    this.router.navigateByUrl('/shopping-cart', { state: { product } });
+  }
 
 }
