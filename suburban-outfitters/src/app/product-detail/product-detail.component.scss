@@ -1,0 +1,18 @@
+mat-grid-tile {
+  display: flex;
+  justify-content: flex-start !important ;
+  align-items: flex-start !important;
+  left:10px;
+}
+
+mat-list-item{
+  padding: 0px;
+  text-transform: capitalize;
+  width: 100%;
+}
+mat-option{
+  width: 100%;
+}
+mat-form-field{
+  width: 100%;
+}

@@ -1,2 +1,86 @@
-<p>product-detail works!</p>
-{{ product | json}}
+<!-- <p>product-detail works!</p> -->
+<!-- {{ product | json}} -->
+<div class="container"
+fxLayout
+fxLayout.xs="column"
+fxLayoutAlign="center"
+fxLayoutGap="10px"
+fxLayoutGap.xs="0">
+    <div class="container" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="25px grid">
+        <nav mat-tab-nav-bar fxFlex="100%" fxLayoutAlign="center">
+            <a mat-tab-link routerLink="/product-list" routerLinkActive="active">Products</a>
+            <a mat-tab-link routerLink="/account" routerLinkActive="active">Update Account</a>
+            <a mat-tab-link routerLink="/inventory" routerLinkActive="active">Inventory</a>
+            <a mat-tab-link routerLink="/orders" routerLinkActive="active">Your Orders </a>
+            <a mat-tab-link routerLink="/shopping-cart" routerLinkActive="active">Your Cart</a>
+        </nav>
+    </div>
+</div>
+<div style="background-color: ghostwhite;">
+  <mat-grid-list cols="4" style="padding:2px">
+    <mat-grid-tile colspan="2" rowspan="2">
+      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    </mat-grid-tile>
+
+    <mat-grid-tile colspan="2" rowspan="3">
+      <div  style="top: 10px; height: 100%;">
+        <mat-list role="list">
+          <h2> Product Details</h2>
+          <mat-list-item role="listitem">
+            <mat-label><b>Name:</b> {{product.title}}</mat-label>
+          </mat-list-item>
+          <mat-list-item role="listitem">
+            <mat-label><b>Item Type:</b> Shirt</mat-label>
+          </mat-list-item>
+          <mat-list-item role="listitem">
+            <mat-label><b>Price:</b> $20</mat-label>
+          </mat-list-item>
+          <mat-list-item role="listitem">
+            <mat-label><b>Availability:</b> In Stock</mat-label>
+          </mat-list-item>
+          <mat-list-item role="listitem">
+            <mat-label><b>Description:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </mat-label>
+          </mat-list-item>
+
+        </mat-list>
+        <br>
+        <form class="example-form" style="width: 100%;">
+          <mat-form-field appearance="fill" style="width: 100%;">
+            <mat-label>Gender</mat-label>
+            <mat-select>
+              <mat-option value="option">Male</mat-option>
+              <mat-option value="option">Female</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <br>
+          <mat-form-field appearance="fill">
+            <mat-label>Size</mat-label>
+            <mat-select>
+              <mat-option value="option">Small</mat-option>
+              <mat-option value="option">Medium</mat-option>
+              <mat-option value="option">Large</mat-option>
+              <mat-option value="option">X-Large</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <br>
+          <mat-form-field appearance="fill">
+            <mat-label>Quantity</mat-label>
+            <input matInput type="number" placeholder="1">
+          </mat-form-field>
+          <br>
+        </form>
+        <br>
+        <div class="example-button-row">
+          <button mat-raised-button color="primary">Add to Cart</button>
+          <button mat-raised-button color="primary" style="left: 30%;">Proceed to Checkout</button>
+
+        </div>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="2" rowspan="1"></mat-grid-tile>
+    <mat-grid-tile colspan="2" rowspan="1" style="width: 100%;">
+
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
